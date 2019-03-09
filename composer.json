@@ -1,4 +1,9 @@
 {
-    "name": "dq78/isklep_api_client",
-    "require": {}
+  "name": "dq78/isklep_api_client",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "dq78\\isklep_api_client\\": "app"
+    }
+  }
 }
