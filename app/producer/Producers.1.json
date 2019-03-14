@@ -1,0 +1,6 @@
+{
+  "postfix_url": {
+    "getAll": "/shop_api/v1/producers",
+    "createOne": "/shop_api/v1/producers"
+  }
+}

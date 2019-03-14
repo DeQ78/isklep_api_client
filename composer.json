@@ -1,9 +1,11 @@
 {
   "name": "dq78/isklep_api_client",
+  "description": "dq78/isklep_api_client",
+  "license": "MIT",
   "require": {},
   "autoload": {
     "psr-4": {
-      "dq78\\isklep_api_client\\": "app"
+      "dq78\\isklep_api_client\\": "app/"
     }
   }
 }
