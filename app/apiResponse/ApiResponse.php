@@ -22,8 +22,8 @@ abstract class ApiResponse extends IsklepBase
 //        - API_VERSION_NOT_FOUND
 //        - ROUTE_NOT_FOUND_OR_METHOD_NOT_ALLOWED
 //
-//        - UNAUTHORIZED                - blad loginu hasla
-//        - MALFORMED_REQUEST_BODY      - pos normalne pola, header definiowany jako JSON
+//        - UNAUTHORIZED    (json)
+//        - MALFORMED_REQUEST_BODY (json)
 //        - RESOURCE_NOT_FOUND
 //        - INVALID_LANG_CODE_IN_QUERY_STRING
 //        - INVALID_REQUEST_DATA
@@ -54,11 +54,7 @@ abstract class ApiResponse extends IsklepBase
         }
 
         $showResponce->showResponceObject();
-
-//        $this->showResponceObject();
         return;
 
     }
-
-//    abstract protected function showResponceObject(): void;
 }

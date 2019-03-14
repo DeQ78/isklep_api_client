@@ -64,16 +64,4 @@ class Producers extends ApiResponse
         return;
     }
 
-//    // --- ApiResponse ---
-//    protected function showResponceObject(): void
-//    {
-//
-//        echo 'wyswietlam szczeguly detalu<br/>';
-//        echo '<pre>';
-//        print_r($this);
-//        echo '</pre>';
-//
-//
-//        return;
-//    }
 }
