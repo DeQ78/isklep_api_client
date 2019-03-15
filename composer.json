@@ -2,6 +2,7 @@
   "name": "dq78/isklep_api_client",
   "description": "dq78/isklep_api_client",
   "license": "MIT",
+  "minimum-stability": "0.0.1",
   "require": {},
   "autoload": {
     "psr-4": {
