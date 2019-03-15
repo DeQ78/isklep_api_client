@@ -51,7 +51,6 @@ class Producers extends ApiResponse
 
 
         $apiClient->postRequest($url, $obj->getVars());
-//        $apiClient->postRequest($url, $obj->getVarsStdClass());
 
         $this->response = $apiClient->getResponse();
         $this->apiClientResponseCode = $apiClient->getResponseCode();

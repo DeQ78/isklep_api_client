@@ -2,7 +2,6 @@
 
 namespace dq78\isklep_api_client\producer;
 
-
 use dq78\isklep_api_client\_base\ShowResponce;
 
 class ProducersCreateOne implements ShowResponce
@@ -15,11 +14,14 @@ class ProducersCreateOne implements ShowResponce
 
     public function showResponceObject(): void
     {
-        echo 'wyswietlam szczeguly detalu<br/>';
-        echo '<pre>';
-        print_r($this);
-        echo '</pre>';
+        $resp = $this->producers->getAccessResponse();
 
+        if (!empty($resp->data->producer)) {
+            $ob = new ProducerObj(get_object_vars($resp->data->producer));
+            echo 'Added record: '.$ob.PHP_EOL;
+        } else {
+            echo 'No information about added record'.PHP_EOL;
+        }
 
         return;
     }
