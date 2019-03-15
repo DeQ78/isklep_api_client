@@ -2,8 +2,6 @@
 declare(strict_types=1);
 
 namespace dq78\isklep_api_client\_base;
-//use dq78\isklep_api_client\apiResponse\ApiResponse;
-
 
 abstract class CurlBase extends \stdClass
 {
@@ -27,23 +25,23 @@ abstract class CurlBase extends \stdClass
 
     abstract public function __construct(array $params = array());
 
-//    abstract public function __set(string $name, $value): void;
-
     abstract public function getRequest(string $url, array $params = array()): void;
+
     abstract public function postRequest(string $url, array $post, array $params = array()): void;
 
     abstract protected function createApiAccess(): string;
 
-    public function getErrorOccurred():bool
+    public function getErrorOccurred(): bool
     {
         return $this->errorOccurred;
     }
 
-    public function getErrorType():int
+    public function getErrorType(): int
     {
         return $this->errorOn;
     }
 
-    abstract public function getResponse():\stdClass;
-    abstract public function getResponseCode():array;
+    abstract public function getResponse(): \stdClass;
+
+    abstract public function getResponseCode(): array;
 }

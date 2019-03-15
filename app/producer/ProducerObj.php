@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace dq78\isklep_api_client\producer;
 
-
 use dq78\isklep_api_client\_base\DataObj;
 
 class ProducerObj extends DataObj

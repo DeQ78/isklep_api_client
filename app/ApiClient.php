@@ -31,16 +31,6 @@ class ApiClient extends CurlBase
         $this->curl = curl_init();
     }
 
-//    /**
-//     * @param string $name
-//     * @param mixed $value
-//     */
-//    public function __set(string $name, $value): void
-//    {
-//        $this->params[$name] = $value;
-//    }
-
-
     public function getRequest(string $url, array $params = array()): void
     {
         $this->response = new \stdClass();
@@ -84,26 +74,15 @@ class ApiClient extends CurlBase
     {
         $this->response = new \stdClass();
 
-
-
-
-        // CURLOPT_POSTFIELDS
-        echo '<pre> post fields';
-        print_r($post);
-        echo '<pre>';
-
-
         foreach ($this->conf['POST'] as $k => $v) {
             curl_setopt($this->curl, $k, $v);
         }
-
 
         if (!empty($params)) {
             foreach ($params as $k => $v) {
                 curl_setopt($this->curl, $k, $v);
             }
         }
-
 
         $data_string = json_encode($post);
 
