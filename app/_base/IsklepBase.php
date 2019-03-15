@@ -78,7 +78,7 @@ abstract class IsklepBase
             return $this->apiAccess['base_url'] . $this->postfix_url[$methodName];
     }
 
-    public function getAccessResponse():\stdClass
+    public function getAccessResponse(): \stdClass
     {
         return $this->response;
     }

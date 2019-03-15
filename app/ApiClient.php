@@ -85,9 +85,6 @@ class ApiClient extends CurlBase
         $this->response = new \stdClass();
 
 
-//        CURLOPT_PROTOCOLS => 1,
-//        CURLOPT_HEADER => 0,
-//        CURLOPT_RETURNTRANSFER => true
 
 
         // CURLOPT_POSTFIELDS

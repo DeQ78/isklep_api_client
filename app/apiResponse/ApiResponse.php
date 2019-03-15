@@ -8,12 +8,6 @@ use dq78\isklep_api_client\_base\ShowResponce;
 
 abstract class ApiResponse extends IsklepBase
 {
-//    protected $apiClientResponse = null;
-//    protected $errorOccurred = false;
-//    protected $errorOn = 0;
-//    protected $curlErrorNo = 0;
-//    protected $curlHttpCode = 200;
-
     protected function showResponce(ShowResponce $showResponce): void
     {
 //        - INTERNAL_SERVER_ERROR

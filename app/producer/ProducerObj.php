@@ -9,7 +9,7 @@ use dq78\isklep_api_client\_base\DataObj;
 class ProducerObj extends DataObj
 {
     /**
-     * @var int null
+     * @var int
      */
     protected $id = null;
 
@@ -18,7 +18,9 @@ class ProducerObj extends DataObj
      */
     protected $name = '';
 
-    /**@var string * */
+    /**
+     * @var string
+     */
     protected $site_url = '';
 
     /**
@@ -36,11 +38,8 @@ class ProducerObj extends DataObj
      */
     protected $source_id = '';
 
-
-//    public function __construct(array $params)
-//    {
-////        echo 'load params = '.print_r($params,true).'<br/>';
-//        parent::__construct($params);
-//    }
-
+    public function getVars(): array
+    {
+        return array('producer' => parent::getVars());
+    }
 }
