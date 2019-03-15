@@ -20,7 +20,7 @@ class ProducersCreateOne implements ShowResponce
             $ob = new ProducerObj(get_object_vars($resp->data->producer));
             echo 'Added record: '.$ob.PHP_EOL;
         } else {
-            echo 'No information about added record'.PHP_EOL;
+            echo 'No information about added record.'.PHP_EOL;
         }
 
         return;
